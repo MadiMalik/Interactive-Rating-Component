@@ -19,7 +19,8 @@ body{
     background-color: var(--pink-900);
     display: grid;
     place-content: center;
-    margin: 80px;
+    height: 100vh;
+    
 }
 
 .visually-hidden{
@@ -36,7 +37,7 @@ body{
 
 /* Form Styles */
 .wrapper{
-    max-width: 330px;
+    max-width: 340px;
     --border-radius: 10px;
     border-radius: calc(var(--border-radius) + 20px);
     padding: 26px;
@@ -80,7 +81,7 @@ body{
     padding: 0;
 }
 
-.form-label{
+.form-box{
     background-color: var(--pink-800);
     border-radius: 50%;
     width: 3rem;
@@ -94,18 +95,18 @@ body{
     position: relative;
 }
 
-.form-label:hover{
+.form-box:hover{
     background-color: var(--primary);
     color: var(--white);
 }
 
-.form-label:focus{
+.form-box:focus{
     color: var(--primary);
 }
 
 
-.form-label > span{
-    z-index: 2;
+.form-label{
+    z-index: 3;
 }
 
 .form-input{
@@ -126,7 +127,7 @@ body{
 .form-input:checked{
     background-color: var(--light-100);
 }
-.form-input:checked + span{
+.form-input:checked, .form-label{
     color: var(--white);
 }
 
@@ -192,7 +193,7 @@ body{
     .wrapper{
         padding: 32px;
     }
-    .form-label{
+    .form-box{
         width: 3.5rem;
         height: 3.5rem;
         margin: 24px 0;

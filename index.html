@@ -33,7 +33,8 @@
         </p>
         <fieldset class="form-fieldset">
           <legend class="visually-hidden">Plaese choose a rating:</legend>
-          <lebal for="rating-1" class="form-label">
+          <div class="form-box">
+            <lebal class="form-label" for="rating-1"> 1</lebal>
             <input
              type="radio"
              id="rating-1" 
@@ -41,19 +42,21 @@
              name="rating"
              class="form-input"
              />
-             <span>1</span>
-          </lebal>
-          <lebal for="rating-2" class="form-label">
-            <input
-             type="radio"
-             id="rating-2" 
-             name="rating"
-             value="2" 
-             class="form-input"
-             />
-             <span>2</span>
-          </lebal>
-          <lebal for="rating-3" class="form-label">
+            </div>
+        
+            <div class="form-box">
+             <lebal class="form-label" for="rating-2">2</lebal>
+              <input
+              type="radio"
+              id="rating-2" 
+              name="rating"
+              value="2" 
+              class="form-input"
+              />
+            </div>
+
+        <div class="form-box">
+          <lebal class="form-label" for="rating-3">3</lebal>
             <input
              type="radio"
              name="rating"
@@ -61,28 +64,29 @@
              value="3" 
              class="form-input"
              />
-             <span>3</span>
-          </lebal>
-          <lebal for="rating-4" class="form-label">
-            <input
-             type="radio"
-             id="rating-4" 
-             value="4" 
-             name="rating"
-             class="form-input"
-             />
-             <span>4</span>
-          </lebal>
-          <lebal for="rating-5" class="form-label">
-            <input
-             type="radio"
-             id="rating-5" 
-             value="5" 
-             name="rating"
-             class="form-input"
-             />
-             <span>5</span>
-          </lebal>
+            </div>
+
+            <div class="form-box">
+             <lebal class="form-label" for="rating-4">3</lebal>
+              <input
+              type="radio"
+              id="rating-4" 
+              value="4" 
+              name="rating"
+              class="form-input"
+              />
+            </div>
+
+            <div class="form-box">
+              <lebal class="form-label" for="rating-5">5</lebal>
+              <input
+              type="radio"
+              id="rating-5" 
+              value="5" 
+              name="rating"
+              class="form-input"
+              />
+             </div>
         </fieldset>
         <button type="submit" class="submit" id="submit" disabled>Submit</button>
       </form>
